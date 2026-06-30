@@ -9,18 +9,8 @@ void inputData(float &berat, float &tinggi){
     cin >> tinggi;
 }
 
-float hitungBMI(float berat, float tinggi)
-{
+float hitungBMI(float berat, float tinggi){
     return berat / (tinggi * tinggi);
-}
-
-string cekKondisi(float bmi){
-    if(bmi < 18.5)
-        return "Berat Badan Kurang";
-    else if(bmi < 25)
-        return "Berat Badan Normal";
-
-    return "";
 }
 
 string cekKondisi(float bmi){
@@ -41,11 +31,11 @@ int main() {
 
     inputData(berat, tinggi);
 
-       float bmi = hitungBMI(berat, tinggi);
+    float bmi = hitungBMI(berat, tinggi);
 
-       cout << "\n--- Hasil ---" << endl;
-       cout << "BMI Anda : " << bmi << endl;
-       cout << "Status   : " << cekKondisi(bmi) << endl;
+    cout << "\n--- Hasil ---" << endl;
+    cout << "BMI Anda : " << bmi << endl;
+    cout << "Status   : " << cekKondisi(bmi) << endl;
 
     return 0;
 }
