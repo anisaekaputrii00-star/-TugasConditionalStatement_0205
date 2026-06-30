@@ -14,6 +14,15 @@ float hitungBMI(float berat, float tinggi)
     return berat / (tinggi * tinggi);
 }
 
+string cekKondisi(float bmi){
+    if(bmi < 18.5)
+        return "Berat Badan Kurang";
+    else if(bmi < 25)
+        return "Berat Badan Normal";
+
+    return "";
+}
+
 int main() {
     float berat, tinggi;
 
