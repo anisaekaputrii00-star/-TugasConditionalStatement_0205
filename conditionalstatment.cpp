@@ -37,10 +37,13 @@ string cekKondisi(float bmi){
 int main() {
     float berat, tinggi;
 
+    cout << "--- Selamat Datang Mahasiswa Kelas A 2025 ---\n\n";
+
     inputData(berat, tinggi);
 
        float bmi = hitungBMI(berat, tinggi);
 
+       cout << "\n--- Hasil ---" << endl;
        cout << "BMI Anda : " << bmi << endl;
        cout << "Status   : " << cekKondisi(bmi) << endl;
 
